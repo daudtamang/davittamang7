@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description"
+    content="Davit Tamang portfolio website, graphic designer, web developer, UI UX designer from Nepal.">
+  <meta name="keywords"
+    content="Davit Tamang, Davit portfolio, web developer Nepal, graphic designer Nepal, UI UX designer Nepal">
+  <meta name="author" content="Davit Tamang">
+  <title>Davit Tamang | Web Developer & Graphic Designer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davit Tamang - Premium Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #050505;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Animated background */
+    .bg-animation {
+      background: radial-gradient(circle at 20% 20%, #ff003322, transparent 40%),
+        radial-gradient(circle at 80% 80%, #00e5ff22, transparent 40%),
+        radial-gradient(circle at 50% 50%, #7c4dff22, transparent 45%);
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: radial-gradient(circle at 20% 20%, #00e5ff22, transparent 40%),
+        radial-gradient(circle at 80% 80%, #7c4dff22, transparent 40%);
+      z-index: -1;
+      animation: moveBg 10s infinite alternate;
+    }
+
+    @keyframes moveBg {
+      0% {
+        transform: scale(1) rotate(0deg);
+      }
+
+      100% {
+        transform: scale(1.2) rotate(5deg);
+      }
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #00e5ff;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .glow-name {
+      font-size: 4rem;
+      font-weight: 800;
+      color: #00e5ff;
+      text-shadow: 0 0 20px #00e5ff;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 1.3rem;
+      color: #ccc;
+      animation: fadeInUp 2s ease;
+    }
+
+    .role {
+      margin-top: 10px;
+      color: #7c4dff;
+      font-weight: bold;
+      animation: fadeInUp 2.5s ease;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #00e5ff;
+      color: #000;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+      animation: fadeInUp 3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00e5ff;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: #111;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 20px #00e5ff22;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .box {
+      background: #111;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #222;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      border-color: #00e5ff;
+    }
+
+    .profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #00e5ff;
+      margin-bottom: 20px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #222;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #666;
+    }
+
+    @media(max-width:768px) {
+      .glow-name {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-animation"></div>
+
+  <header>
+    <div class="logo">DAUD BAJEY<span style="color:#ff0033;">.</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#cv">CV</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="profile"><img src="daud.png" alt="Davit Tamang"
+        style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+    <h1 class="glow-name">Davit Tamang</h1>
+    <p class="subtitle">Creative Developer & Team management </p>
+    <p class="role">🔥 UI / UX Designer | Professional | Powerful</p>
+    <a href="#about" class="btn">Explore Portfolio</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      I am <b>David Tamang (Daudbajey)</b>. I build creative digital ideas, websites, and business concepts. I focus on
+      innovation, design, and future technology.
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="box">🚀 Creative Portfolio Design</div>
+      <div class="box">💻 Web Development</div>
+      <div class="box">⚡ JavaScript & React</div>
+      <div class="box">📊 Business Strategy</div>
+      <div class="box">🎨 UI/UX Design</div>
+      <div class="box">🖌️ Graphic Design</div>
+      <div class="box">📱 Mobile Friendly Design</div>
+    </div>
+  </section>
+
+  <section id="jobs">
+    <h2>Jobs & Hiring</h2>
+    <div class="card">
+      I am available for <b>Graphic Design</b>, <b>Web Development</b>, and <b>UI/UX Design</b> projects. If you are
+      looking to hire for creative or technical work, contact me.
+      <br><br>
+      I also welcome applications from designers and developers for collaboration opportunities.
+      <br><br>
+      <a class="btn" href="mailto:daudtamang2025@gmail.com">Apply for Job</a>
+    </div>
+  </section>
+
+  <section id="cv">
+    <h2>CV / Resume</h2>
+    <div class="card">
+      Upload your CV PDF (davit.pdf) and showcase your achievements here. Your profile image should be saved as daud.png
+      or daud.jpg in the same folder.
+      <br><br>
+      <a class="btn" href="davit.pdf" target="_blank">Download CV</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <a class="btn" href="https://wa.me/9779803285800" target="_blank">WhatsApp Me</a><br><br>
+      📞 9803285800 <br>
+      📧 daudtamang2025@gmail.com <br>
+      📍 Lagankhel, Lalitpur, Nepal <br>
+      🌐 davittamang.com.np
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Davit Tamang | Premium Portfolio
+  </footer>
+
+</body>
+
+</html>
